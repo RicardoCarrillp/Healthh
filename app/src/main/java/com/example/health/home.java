@@ -1,4 +1,4 @@
-0package com.example.health;
+package com.example.health;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,11 +35,10 @@ homeS.setOnClickListener(this);
 
     }
 
-    @Override 
+    @Override
     public void onClick(View v) {
         //Toast.makeText(getApplicationCo ntext(), "On click mi perro", Toast.LENGTH_SHORT).show();
         Intent i=new Intent(home.this, login.class);
         startActivity(i);
     }
 }
-0

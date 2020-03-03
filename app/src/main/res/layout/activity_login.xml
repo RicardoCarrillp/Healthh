@@ -6,18 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".login">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginLeft="96dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
-
     <Button
         android:id="@+id/sesion"
         android:layout_width="179dp"
@@ -25,66 +13,57 @@
         android:layout_marginStart="112dp"
         android:layout_marginLeft="112dp"
         android:layout_marginBottom="364dp"
+        android:onClick="iniciar"
         android:shadowColor="#E91E63"
-        android:text="Iniciar Sesión"
+        android:text="@string/iniciar_sesi_n"
         android:textColorHint="#673AB7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginLeft="96dp"
-        android:layout_marginTop="160dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginLeft="104dp"
-        android:layout_marginTop="168dp"
-        android:text="Email o Username"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/sesionF"
-        android:layout_width="202dp"
-        android:layout_height="52dp"
+        android:layout_width="207dp"
+        android:layout_height="59dp"
         android:layout_marginStart="104dp"
         android:layout_marginLeft="104dp"
         android:layout_marginBottom="220dp"
-        android:text="Iniciar Sesión con facebook"
+        android:text="@string/iniciar_sesi_n_con_facebook"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/sesionG"
-        android:layout_width="196dp"
-        android:layout_height="51dp"
+        android:layout_width="211dp"
+        android:layout_height="57dp"
         android:layout_marginStart="104dp"
         android:layout_marginLeft="104dp"
         android:layout_marginBottom="132dp"
-        android:text="Iniciar Sesión con google"
+        android:text="@string/iniciar_sesi_n_con_google"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
+    <EditText
+        android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginLeft="112dp"
-        android:layout_marginTop="29dp"
-        android:text="Contraseña"
+        android:layout_marginStart="94dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginBottom="65dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/sesion"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
