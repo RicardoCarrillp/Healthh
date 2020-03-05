@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClick(View v) {
         //Toast.makeText(getApplicationCo ntext(), "On click mi perro", Toast.LENGTH_SHORT).show();
-        Intent i=new Intent( MainActivity.this, login.class);
+        Intent i=new Intent( MainActivity.this, home.class);
         startActivity(i);
     }
 }

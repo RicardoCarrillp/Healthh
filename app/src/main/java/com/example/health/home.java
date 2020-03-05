@@ -21,17 +21,6 @@ Button homeS,homeR;
         setContentView(R.layout.activity_home);
 
 
-        homeS=findViewById(R.id.homeS);
-        homeR=findViewById(R.id.homeR );
-homeS.setOnClickListener(this);
-        homeR.setOnClickListener(this);
-
-        homeS.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Hola mi perro", Toast.LENGTH_SHORT).show();
-            }
-        });
 
     }
 
